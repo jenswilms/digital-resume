@@ -1,0 +1,76 @@
+@import "../../resources/variables.scss";
+
+.homeContainer {
+  width: 100%;
+}
+.profile,
+.experience,
+.education,
+.personalItem {
+  padding: var(--blockPadding);
+  background: $yellow;
+  border-radius: var(--blockRadius);
+}
+
+// .profile {
+//   background: $darkblue;
+//   color: $yellow;
+// }
+
+.profile,
+.experience,
+.education,
+.containerPersonal {
+  margin: var(--blockDistance);
+}
+
+.categoryTitle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: $font-headers;
+  font-size: 1.4em;
+  color: $darkblue;
+  p {
+    margin-right: 10px;
+  }
+}
+
+.subcatItem {
+  .categoryTitle {
+    font-size: 1.1em;
+    color: $black;
+  }
+}
+
+.subItems {
+  padding: var(--subItemPadding);
+}
+
+.containerPersonal {
+  display: flex;
+  justify-content: space-between;
+  // width: calc(100% - 40px);
+}
+
+.personalItem {
+  width: calc(50% - (2 * var(--blockPadding)) - 0.5 * var(--blockDistance));
+}
+
+.title {
+  font-family: $font-headers;
+  font-size: 1.4em;
+  color: $darkblue;
+}
+
+// MOBILE
+@media (max-width: $mobile-width) {
+  .containerPersonal {
+    flex-direction: column;
+
+    .personalItem {
+      width: calc(100% - (2 * var(--blockPadding)));
+      margin-bottom: var(--blockDistance);
+    }
+  }
+}

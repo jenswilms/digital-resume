@@ -1,0 +1,114 @@
+@import "../../resources/variables.scss";
+
+.container {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+
+  .time {
+    width: 15%;
+    min-width: 125px;
+  }
+
+  .main {
+    width: 85%;
+    max-width: calc(100% - 125px);
+  }
+}
+.header {
+  display: flex;
+  align-items: center;
+  p {
+    margin: 0;
+  }
+
+  .title {
+    margin-right: 5px;
+    font-size: 1.1em;
+    font-family: $font-headers;
+  }
+
+  .orgAndIcons {
+    display: flex;
+    align-items: center;
+  }
+
+  .org::before,
+  .org::after {
+    content: "∙";
+    margin: 0 5px;
+  }
+
+  .infoIcons {
+    display: flex;
+    font-size: 1em;
+    color: $darkblue;
+
+    svg {
+      margin-right: 3px;
+    }
+
+    a {
+      color: $darkblue;
+      font-size: 1.2em;
+    }
+  }
+}
+
+.subHeader {
+  display: flex;
+  align-items: center;
+  color: $black;
+
+  .time {
+    font-weight: 700;
+    margin-right: 5px;
+  }
+}
+
+.description {
+  margin: 5px 0 25px 0;
+  max-width: 750px;
+}
+
+@media (max-width: $mobile-width) {
+  .container {
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    .main {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .title {
+        font-size: 1.2em;
+        margin: 7px 0;
+      }
+
+      .org {
+        font-size: 1.1em;
+        margin: 5px 0;
+      }
+
+      .org::before {
+        content: "";
+        margin: 0;
+      }
+
+      .org::after {
+        content: "";
+        margin: 0 2.5px;
+      }
+    }
+
+    .description {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+  }
+}

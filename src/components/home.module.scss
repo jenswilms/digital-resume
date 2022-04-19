@@ -1,0 +1,27 @@
+@import "../resources/variables.scss";
+
+.header p,
+.intro p {
+  margin: 0;
+}
+
+.header {
+  background: $darkblue;
+  color: $yellow;
+}
+
+.intro {
+  background: $darkblue;
+  color: $yellow;
+  padding: 20px;
+
+  .title {
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: $font-headers;
+  }
+}
+.main {
+  padding: var(--outerDistance);
+  // background: $yellow;
+}

@@ -1,0 +1,44 @@
+$darkblue: #1b263b;
+$darkerblue: #0e141f;
+$yellow: #f9eccc;
+$black: #000;
+$lightblue: #6f9ceb;
+$brown: #654639;
+$darkyellow: #f1e1b7;
+$red: #f71735;
+$darkerred: #a22c29;
+$darkerwhite: #eaeaea;
+
+$font-headers: "Poppins";
+$font-main: "Roboto";
+
+// $blockPadding: 30px;
+// $blockDistance: 20px;
+// $outerDistance: 20px;
+// $blockRadius: 20px;
+// $subItemPadding: 20px;
+
+// $blockPaddingMobile: 20px;
+$mobile-width: 585px;
+
+@media (min-width: 100px) {
+  :root {
+    --blockPadding: 30px;
+    --blockDistance: 15px;
+    --outerDistance: 0px;
+    --blockRadius: 20px;
+    --subItemPadding: 20px 0;
+    --menuDistance: 15px;
+  }
+}
+
+@media (min-width: 585px) {
+  :root {
+    --blockPadding: 30px;
+    --blockDistance: 20px;
+    --outerDistance: 20px 70px;
+    --blockRadius: 20px;
+    --subItemPadding: 20px;
+    --menuDistance: 20px;
+  }
+}

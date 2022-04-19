@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
+@import "./resources/variables.scss";
+
+body {
+  margin: 0;
+  font-family: $font-main;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $darkyellow;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.hidden {
+  display: none;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.buttonYellow {
+  border: none;
+  cursor: pointer;
+  // text-transform: uppercase;
+  // font-size: 1em;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  background: $yellow;
+  color: $darkblue;
+  padding: 15px;
+  border-radius: 5px;
+  justify-content: center;
+  transition: 0.1s;
+
+  svg {
+    margin-right: 10px;
+  }
+}
+
+.buttonYellow:hover {
+  background: $darkyellow;
+}

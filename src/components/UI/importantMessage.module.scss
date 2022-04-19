@@ -1,0 +1,62 @@
+@import "../../resources/variables.scss";
+
+.mainContainer {
+  position: relative;
+  text-align: center;
+}
+
+.iconContainer {
+  cursor: pointer;
+  position: relative;
+  z-index: 99;
+  font-size: 1.2em;
+}
+
+.infoText {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: $darkblue;
+  padding: 10px;
+  border-radius: 5px;
+  color: $yellow;
+  width: max-content;
+  max-width: 400px;
+  font-size: 0.9em;
+  z-index: 99;
+}
+.shade {
+  // display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(27, 38, 59, 0.4);
+}
+
+.shadeShown {
+  visibility: visible;
+  opacity: 1;
+  transition: all 150ms linear;
+  z-index: 97;
+}
+
+.shadeHidden {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 0;
+  transition: all 150ms linear 0.1s;
+}
+
+@media (max-width: 585px) {
+  .infoText {
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+    max-width: 90vw;
+  }
+}

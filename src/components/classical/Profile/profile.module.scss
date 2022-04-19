@@ -1,0 +1,18 @@
+@import "../../../resources/variables.scss";
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: $font-headers;
+  color: $darkblue;
+  font-size: 1.4em;
+  p {
+    margin-right: 10px;
+  }
+}
+
+.profileText {
+  padding: var(--subItemPadding) 0;
+  line-height: 1.35em;
+}

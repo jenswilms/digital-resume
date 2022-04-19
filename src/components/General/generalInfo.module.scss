@@ -1,0 +1,103 @@
+@import "../../resources/variables.scss";
+
+a {
+  color: $yellow;
+  text-decoration: none;
+}
+
+.general {
+  //   width: 30%;
+  //   height: 40%;
+  color: $yellow;
+  background: $darkerblue;
+  position: fixed;
+  top: var(--menuDistance);
+  right: var(--menuDistance);
+  //   margin: 20px;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  z-index: 100;
+
+  .minimize svg {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    transform: translate(50%, -50%);
+    font-size: 1.8em;
+    cursor: pointer;
+    // display: flex;
+    // align-items: center;
+  }
+}
+
+.title {
+  margin: 10px 0 20px 0;
+  font-family: $font-headers;
+  font-size: 2.2em;
+}
+
+.contact {
+  padding: 0;
+  text-align: right;
+  margin: auto 10%;
+
+  li {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    svg {
+      font-size: 1.3em;
+      margin-right: 7px;
+    }
+  }
+}
+
+.buttonCta {
+  margin-top: 20px;
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  background: $red;
+  //   display: inline-block;
+  padding: 15px;
+  border-radius: 5px;
+  justify-content: center;
+  transition: 0.1s;
+
+  svg {
+    margin-right: 10px;
+  }
+}
+
+.buttonCta:hover {
+  color: $darkerwhite;
+  background: $darkerred;
+}
+
+.generalMinimal {
+  //   width: 0px;
+  //   height: 50px;
+
+  background: $red;
+  color: white;
+
+  // .minimize {
+  //   font-size: 1.4em;
+  //   svg {
+  //     margin-right: 5px;
+  //   }
+  // }
+  .generalChildren {
+    display: none;
+  }
+}

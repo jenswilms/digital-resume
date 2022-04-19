@@ -1,0 +1,26 @@
+@import "../../../resources/variables.scss";
+
+.containerPersonal {
+  display: flex;
+  width: 100%;
+}
+
+.personalItem {
+  width: 50%;
+}
+
+.title {
+  font-family: $font-headers;
+  font-size: 1.4em;
+  color: $darkblue;
+}
+
+.liContainer {
+  display: flex;
+
+  svg {
+    font-size: 1.2em;
+    color: $darkblue;
+    margin-left: 5px;
+  }
+}

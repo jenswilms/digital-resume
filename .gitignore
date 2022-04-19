@@ -4,9 +4,15 @@
 /node_modules
 /.pnp
 .pnp.js
+/.netlify
 
 # testing
 /coverage
+
+# project documents
+/src/data/resumeData.js
+/src/resources/img/*
+/src/components/classical/ItemOld.js
 
 # production
 /build

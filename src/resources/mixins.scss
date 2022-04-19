@@ -1,0 +1,9 @@
+@mixin avatar_size($prop) {
+  #{$prop}: 200px;
+  @media (#{$tablet_size}) {
+    #{$prop}: 150px;
+  }
+  @media (#{$mobile_size}) {
+    #{$prop}: 100px;
+  }
+}
